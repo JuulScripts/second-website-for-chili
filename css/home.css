@@ -1,0 +1,14 @@
+#HOME {
+    width: 10%;
+    height: 4%;
+    border-style: double;
+    font-size: 150%;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+    background-image: url(../images/extrabg.jpg);
+    background-size: contain;
+    border-width: 4px;
+    border-color: white;
+    color: white;
+    font-family: cursive;
+}
