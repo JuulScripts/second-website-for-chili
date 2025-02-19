@@ -1,77 +1,144 @@
 body {
     background-image: url(../images/background.jpg);
     background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
 }
 
+/* Headings */
+h1, h3, p {
+    position: relative;
+    font-family: 'Emilys Candy', cursive;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px black;
+}
 
 h1 {
-    position: relative; 
     top: 15%;
-    font-family:cursive;
-    font-size: 150%;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 5px 5px black;
+    font-size: 250%;
 }
+
 p {
-    position: relative;
     top: 15%;
-    font-family:cursive;
-    font-size: 120%;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 5px 5px black;
+    font-size: 170%;
     width: 70%;
-    left: 10%;
+    margin: 0 auto;
 }
+
 h3 {
-    position: relative;
     top: 15%;
-    font-family:cursive;
     font-size: 120%;
-    text-align: center;
     color: rgb(245, 245, 245);
-    text-shadow: 5px 5px 5px black;
 }
+
 
 .container {
-    font-size: 400% ;
-    position: absolute;
+    font-size: 250%;
     width: 100%;
     height: 15%;
-    background-color: rgba(14, 126, 42, 0.327);
+    background-color: rgba(14, 126, 42, 0.6);
     text-align: center;
     top: 0;
     left: 0;
-    font-family: cursive;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.625);  
+    position: fixed;
+    font-family: 'Atma', cursive;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
 }
+
 
 .sidecontainer {
-    font-size: 200% ;
-    position: absolute;
-    width: 10%;
+    font-size: 150%;
+    width: 3%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.87);
+    background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
     top: 0;
     left: 0;
-    font-family: cursive;
+    position: fixed;
+    font-family: 'Atma', cursive;
     color: rgb(14, 126, 42);
-    text-shadow: 5px 5px 5px rgba(14, 126, 42, 0.327); 
-    transition: all 0.5s ease;
+    text-shadow: 3px 3px 5px rgba(14, 126, 42, 0.3);
+    transition: width 0.5s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
 }
 
+.sidecontainer:hover {
+    width: 20%;
+}
 
 
 ul {
-    padding-left: 0;
+    padding: 0;
     list-style-type: none;
+    width: 100%;
 }
+
+ul li {
+    margin: 20px 0;
+}
+
 a {
-    list-style-type: none;
-    display: inline-block;
+    display: block;
     text-decoration: none;
     color: inherit;
+    font-size: 120%;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(14, 126, 42);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1, h3, p {
+        font-size: 110%;
+    }
+
+    .container {
+        font-size: 180%;
+        height: 12%;
+    }
+
+    .sidecontainer {
+        width: 6%;
+        font-size: 60%;
+    }
+
+    .sidecontainer:hover {
+        width: 25%;
+        font-size: 130%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h3, p {
+        font-size: 100%;
+    }
+
+    .container {
+        font-size: 150%;
+        height: 10%;
+    }
+
+    .sidecontainer {
+        width: 25%;
+        font-size: 100%;
+    }
+
+    .sidecontainer:hover {
+        width: 30%;
+    }
 }

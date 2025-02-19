@@ -3,21 +3,24 @@ img {
     top: 0%;
     left: 18%;
     width: 50%;
-    height: 60%;
+    height: auto;
+    max-width: 100%;
 }
+
 h1 {
     position: relative; 
     top: 0%;
-    font-family:cursive;
+    font-family: 'Atma', cursive;
     font-size: 150%;
     text-align: center;
     color: rgb(255, 255, 255);
     text-shadow: 5px 5px 5px black;
 }
+
 p {
     position: relative;
     top: 0%;
-    font-family:cursive;
+    font-family: 'Atma', cursive;
     font-size: 140%;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -25,11 +28,14 @@ p {
     width: 70%;
     left: 10%;
 }
+
 body {
     background-image: url(../images/extrabg.jpg);
     background-size: cover;
+    background-position: center;
     overflow-x: hidden;
 }
+
 a {
     list-style-type: none;
     display: inline-block;
@@ -37,10 +43,9 @@ a {
     color: inherit;
 }
 
-#Ibutton {
-
+#Ibutton, #Jbutton {
     position: relative;
-    font-family:cursive;
+    font-family: 'Emilys Candy', cursive;
     font-size: 200%;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -52,18 +57,37 @@ a {
     width: 10%;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    img {
+        left: 0;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
 
+    h1, p {
+        font-size: 120%;
+        width: 90%;
+        left: 5%;
+    }
 
-#Jbutton {
-    position: relative;
-    font-family:cursive;
-    font-size: 200%;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 5px 5px black;
-    left: 75%;
-    top: -25%;
-    border-style: double;
-    border-width: 4px;
-    width: 10%;
+    #Ibutton, #Jbutton {
+        font-size: 150%;
+        width: 30%;
+        left: 35%;
+        top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, p {
+        font-size: 100%;
+    }
+
+    #Ibutton, #Jbutton {
+        font-size: 120%;
+        width: 50%;
+        left: 25%;
+    }
 }
