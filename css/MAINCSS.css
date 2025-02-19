@@ -105,6 +105,7 @@ a:hover {
 @media (max-width: 768px) {
     h1, h3, p {
         font-size: 110%;
+        z-index: 99999;
     }
 
     .container {
