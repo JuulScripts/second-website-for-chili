@@ -27,6 +27,7 @@ p {
     text-shadow: 5px 5px 5px black;
     width: 70%;
     left: 10%;
+    z-index: 1000;
 }
 
 body {
